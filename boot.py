@@ -1,4 +1,4 @@
-import wifiConnection
+import lib.wifiConnection as wifiConnection
 
 
 def http_get(url = 'http://detectportal.firefox.com/'):
