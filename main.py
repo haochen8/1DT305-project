@@ -40,14 +40,11 @@ while True:
             'temperature': temperature,
             'humidity': humidity
         }
-        print("Payload:", payload) # Debugging
         try:
             response = urequests.post(datacake_keys.DATACAKE_API_URL, headers=headers, json=payload)
-            print("Datacake response status:", response.status_code) 
-            print("Datacake response text:", response.text)
             response.close()
         except Exception as e:
             print("Error while sending data:", e)
     except Exception as error:
         print("Exception occurred:", error)
-    time.sleep(15)  # Send updates every 15 seconds
+    time.sleep(1800)  # Send updates every 30 minutes
