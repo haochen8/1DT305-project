@@ -47,4 +47,4 @@ while True:
             print("Error while sending data:", e)
     except Exception as error:
         print("Exception occurred:", error)
-    time.sleep(1800)  # Send updates every 30 minutes
+    time.sleep(600)  # Send updates every 10 minutes
